@@ -5,3 +5,7 @@ Feature: Test Sauce Demo Application
     When user Enter Username and Password and click on login buttton
       | standard_user | secret_sauce |
     Then validate user is on Addtocart page
+
+  Scenario: validate Addtocart Functinality
+    When Click on BackPack and T-Shirt
+    When Click on AddTocart Button
