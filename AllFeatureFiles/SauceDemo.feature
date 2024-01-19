@@ -9,3 +9,11 @@ Feature: Test Sauce Demo Application
   Scenario: validate Addtocart Functinality
     When Click on BackPack and T-Shirt
     When Click on AddTocart Button
+
+  Scenario Outline: validate checkout and address page functionality
+    When user click on chekout button
+    And user enter "<FirstName>","<LastName>","<ZipCode>" and click on continue button
+
+    Examples: 
+      | FirstName | LastName | ZipCode |
+      | harshada  | Baravkar |  245783 |
