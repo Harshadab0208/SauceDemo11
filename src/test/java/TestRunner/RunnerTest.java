@@ -7,7 +7,8 @@ import io.cucumber.testng.CucumberOptions;
 		features= {"AllFeatureFiles"},
 		glue={"StepDefinationLayer"},
 		monochrome= true,
-		dryRun = false
+		dryRun = false,
+		plugin= {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 	)
 
 
