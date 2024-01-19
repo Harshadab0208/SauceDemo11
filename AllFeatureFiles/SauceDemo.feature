@@ -17,3 +17,6 @@ Feature: Test Sauce Demo Application
     Examples: 
       | FirstName | LastName | ZipCode |
       | harshada  | Baravkar |  245783 |
+
+  Scenario: validate Thankupage
+    When user click on finish
